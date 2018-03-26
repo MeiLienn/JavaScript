@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS</title>
+</head>
+<body>
+	
+	<script>
+		
+		var budget = +prompt("Ваш бюджет?");
+		var name = prompt("Название вашего магазина?");
+		var mainList = {};
+		
+		mainList = {
+			budget,
+			name,
+			shopGoods:[],
+			employers:{},
+			open: true
+		}
+
+		for (var i = 0; i < 3; i++) {
+			mainList.shopGoods[i] = prompt("Какой тип товаров будем продавать?");
+		}
+
+		console.log (mainList.shopGoods[1]); //check
+
+		alert("Бюджет на 1 день: " + mainList.budget/30);
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		var num = 33721;
+		var res = []; //Остаток от деления
+		
+
+		var i = 0;
+		while (num > 10) {
+			res[i] = num%10;
+			num = Math.floor(num/10);
+			i++;
+		}
+
+		res[i] = num;
+
+		//Умножение цифр числа
+		var result = 1;
+		while (i>=0){
+			result = result*res[i];
+			i--;
+		}
+
+		console.log(result); 
+
+		var result2 = result**3; //Возведение в степень
+		console.log(result2);
+
+	</script>
+</body>
+</html>
