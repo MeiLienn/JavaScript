@@ -76,7 +76,9 @@ function hiringEmployees(){
 		employeeName = prompt("Введите имя сотрудника");
 		if ((typeof(employeeName)) === 'string' && (typeof(employeeName)) !== null && employeeName!='' && employeeName.length < 50){
 			mainList.employers[i] = (i+1) + ' - ' + employeeName;	
-		}
+		} else {
+			i=i-1;
+			}
 	}
 }
 
