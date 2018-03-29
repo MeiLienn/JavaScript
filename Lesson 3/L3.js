@@ -59,16 +59,15 @@ function budgetPerDay(budget){
 
 budgetPerDay();
 
-
-let newPrice;
 function discountSystem(price, discount){
 	if (mainList.discount){
-		newPrice = price*0.8;
+		return price*0.8;
 	}
-	console.log(newPrice);
 }
 
-discountSystem(100, mainList.discount);
+let newPrice;
+newPrice = discountSystem(10, mainList.discount);
+console.log(newPrice);
 
 
 function hiringEmployees(){
