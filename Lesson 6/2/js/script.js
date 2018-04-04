@@ -135,10 +135,4 @@ const mainList = {
 	discount: false,
 	shopItems: [],
 
-	discountSystem: function discountSystem(price){
-				if (mainList.discount){
-					return price*0.8;
-				}
-	}
-
 }
