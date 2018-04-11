@@ -7,17 +7,17 @@ class options{
 		this.textAlign = textAlign;
 	}
 
-	Div(){
-		let div = document.createElement('div');
-		div.textContent = 'Любой текст';
+	div(){
+		let d = document.createElement('div');
+		d.textContent = 'Любой текст';
 		
-		div.style.cssText = `height: ${this.height}px; \
+		d.style.cssText = `height: ${this.height}px; \
     						width: ${this.width}px; \
     						background-color: ${this.bg}; \
     						font-size: ${this.fontSize}px; \
     						text-align: ${this.textAlign}`;
 
-    	document.body.appendChild(div);
+    	document.body.appendChild(d);
 
 	}
 
@@ -26,4 +26,4 @@ class options{
 
 
 let text = new options(200, 300, 'purple', 80, 'center');
-text.Div();
+text.div();
